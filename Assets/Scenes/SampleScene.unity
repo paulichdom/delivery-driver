@@ -237,6 +237,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e864ae47f8fac34489918712ad6b36b3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  steeringAngle: 300
+  acceleration: 20
 --- !u!212 &1303942367
 SpriteRenderer:
   m_ObjectHideFlags: 0
