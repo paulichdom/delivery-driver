@@ -2,8 +2,8 @@ using UnityEngine;
 
 public class Driver : MonoBehaviour
 {
-    private readonly float _steeringAngle = 1f;
-    private readonly float _acceleration = 0.01f;
+    [SerializeField] float steeringAngle = 1f;
+    [SerializeField] float acceleration = 0.01f;
 
     void Start()
     {
@@ -12,7 +12,7 @@ public class Driver : MonoBehaviour
     
     private void Update()
     {
-        transform.Rotate(0, 0, _steeringAngle);
-        transform.Translate(0, _acceleration, 0);
+        transform.Rotate(0, 0, steeringAngle);
+        transform.Translate(0, acceleration, 0);
     }
 }
